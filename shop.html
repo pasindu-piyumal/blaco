@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="header-container">
+            <h1 class="logo">BLACO</h1>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </div>
+    <div class="container" id="home">
+        <h2 class="animated">Welcome to BLACO</h2>
+        <p>Your daily dose of happiness brewed fresh just for you.</p>
+    </div>
+
+    <div class="container" id="menu">
+        <h2>Our menu</h2>
+
+        <div class="coffee-menu">
+            <div class="item">
+                <img src="images/espresso-coffee-recipe04-500x500.webp" alt="Espresso">
+                <h3>Espresso - Rs.600</h3>
+                <button onclick="order('Espresso', 600)">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="images/images.jpeg" alt="Cappuccino">
+                <h3>Cappuccino - Rs.650</h3>
+                <button onclick="order('Cappuccino', 650)">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="images/download.jpeg" alt="Latte">
+                <h3>Latte - Rs.800</h3>
+                <button onclick="order('Latte', 800)">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="images/hot-mocha.jpg" alt="Mocha">
+                <h3>Mocha - Rs.900</h3>
+                <button onclick="order('Mocha', 900)">Order Now</button>
+            </div>
+            <div class="item">
+                <img src="images/images (1).jpeg" alt="IcedCoffee">
+                <h3>Iced Coffee - Rs.700</h3>
+                <button onclick="order('IcedCoffee', 700)">Order Now</button>
+            </div>   
+        </div>
+
+        <div class="cart">
+            <h3>Your order</h3>
+            <ul id="cart-list"></ul>
+            <strong>Total: Rs.<span id="total">0.00</span></strong>
+        </div>
+    </div>
+
+    <div class="container" id="pricing">
+        <h2>Pricing Table</h2>
+        <table>
+            <tr>
+                <th>Beverage</th>
+                <th>Small</th>
+                <th>Medium</th>
+                <th>Large</th>
+            </tr>
+            <tr>
+                <td>Espresso</td>
+                <td>Rs.600</td>
+                <td>Rs.700</td>
+                <td>Rs.800</td>
+            </tr>
+            <tr>
+                <td>Cappuccino</td>
+                <td>Rs.650</td>
+                <td>Rs.750</td>
+                <td>Rs.850</td>
+            </tr>
+            <tr>
+                <td>Latte</td>
+                <td>Rs.800</td>
+                <td>Rs.900</td>
+                <td>Rs.1000</td>
+            </tr>
+            <tr>
+                <td>Mocha</td>
+                <td>Rs.900</td>
+                <td>Rs.1000</td>
+                <td>Rs.1100</td>
+            </tr>
+            <tr>
+                <td>Iced Coffee</td>
+                <td>Rs.700</td>
+                <td>Rs.800</td>
+                <td>Rs.900</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="container" id="about">
+        <h2>Why Choose Us</h2>
+        <ul>
+            <li>Freshly roasted coffee beans</li>
+            <li>Skilled baristas</li>
+            <li>Cozy and relaxing ambiance</li>
+            <li>Free Wi-Fi</li>
+            <li>Friendly staff</li>
+        </ul>
+    </div>
+
+    <div class="container" id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="#">blaco@gmail.com</a></p>
+            <p>Phone: <a href="#">+94779614744</a></p>
+            <a href="#">Facebook</a> |
+            <a href="#">Instagram</a> |
+            <a href="#">Twitter</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 BLACO | All Rights Reserved</p>
+    </footer>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
